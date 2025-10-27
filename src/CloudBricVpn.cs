@@ -63,6 +63,7 @@ namespace CloudBricVpnApi
             }
             return content;
         }
+        
         public async Task<string> GetServers()
         {
             var response = await httpClient.GetAsync($"{apiUrl}/vpn-server");
