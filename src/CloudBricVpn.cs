@@ -1,10 +1,8 @@
 using System;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Net.Http.Json;
-using System.Runtime.InteropServices.JavaScript;
-using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
+using System.Net.Http.Json;
+using System.Net.Http.Headers;
 
 namespace CloudBricVpnApi
 {
