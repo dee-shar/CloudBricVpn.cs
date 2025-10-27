@@ -1,9 +1,22 @@
-# quick_flow_vpn.sh
-Mobile-API for [QuickFlow VPN](https://play.google.com/store/apps/details?id=com.quickflowvpn) an application that offers seamless, uninterrupted connectivity across a vast network of free servers located worldwide, with no limitations on speed or duration
+# CloudBricVpn.cs
+Mobile-API for [CloudBric VPN](https://www.cloudbric.com/cloudbric-vpn/) an application that offers seamless, uninterrupted connectivity across a vast network of free servers located worldwide, with no limitations on speed or duration
 
 ## Example
-```bash
-source ./quick_flow_vpn.sh
-register
-get_servers
+```cs
+using System;
+using CloudBricVpnApi;
+
+namespace Application
+{
+    internal class Program
+    {
+        static async Task Main()
+        {
+            var api = new CloudBricVpn();
+            await api.Login("example@gmail.com", "password");
+            string servers = await api.GetServers();
+            Console.WriteLine(servers);
+        }
+    }
+}
 ```
