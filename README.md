@@ -3,7 +3,6 @@ Mobile-API for [CloudBric VPN](https://www.cloudbric.com/cloudbric-vpn/) an appl
 
 ## Example
 ```cs
-using System;
 using CloudBricVpnApi;
 
 namespace Application
