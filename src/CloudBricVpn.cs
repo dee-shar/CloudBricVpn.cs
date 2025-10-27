@@ -15,7 +15,7 @@ namespace CloudBricVpnApi
         public CloudBricVpn()
         {
             httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.TryAddWithoutValidation("User-Agent", "Dart/3.8 (dart:io)");
+            httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("Dart/3.8 (dart:io)");
             httpClient.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
